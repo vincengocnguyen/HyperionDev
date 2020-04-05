@@ -1,0 +1,113 @@
+Define a function to edit the task:
+
+edit_task():
+
+Check if the task number is in the task dictionary's keys and the task status is not yet completed:
+
+if task_key in task_dict.keys() and task_dict[task_key]["task_status"] == 'No':
+
+Eg.
+Edit a task due date:
+
+                    task_due_date_edit = input("Enter the new due date dd/mm/yyyy for the task: ")
+                    task_dict[task_key]["task_due_date"] = task_due_date_edit
+                    print('Due date for the task has been changed')
+                    rewrite_tasks(task_dict)
+
+The above logic will work for other edit options.
+
+
+rewrite_tasks(task_dict):
+
+def rewrite_tasks(task_dict):
+    task_file = open('tasks.txt', 'w')
+    # Run through the task dictionary and write each value to the text file
+    for task in task_dict.values():
+        for key, value in task.items():
+            task_file.write(value + ", ")
+        task_file.write("\n")
+    task_file.close()
+
+
+Generate_report():
+
+- in order to avoid code repetitions, try extracting the code which creates the 'task_dict' into a function which returns the 'task_dict'.
+
+Some pseudo code logic for this function to assist you with your solution:
+
+# load the task_dict
+# get the total tasks
+  eg.  total_tasks = len(task_dict)
+
+# get the count of the completed tasks
+eg.
+   completed = 0
+   for task in task_dict.values():
+      if task['task completed'] == 'Yes':  # Note: use your dictionary index for completed task status
+           # increment 'completed' by 1
+
+# calculate the incomplete tasks
+- total tasks - completed tasks
+
+# determine overdue tasks
+- percentage incomplete = int((incomplete_tasks/ total_tasks) * 100)
+
+# determine overdue tasks
+overdue = 0
+from datetime import datetime
+today = datetime.today()
+
+for task in task_dict.values():
+   due_date = task['due date']
+   test_due = datetime.fromisoformat(due_date)
+   
+   if test_due < today:
+      # increment overdue
+
+# calculate percentage overdue
+
+# print the report 
+
+# write to new file
+f = open("task_overview.txt", "w+")
+f.write(task_report)
+f.close()
+
+Eg. Implementation for loading a task dictionary:
+
+def load_tasks():
+    # create an empty dictionary variable to store indexes to tasks
+    task_indexes = {}
+    # declare an empty task dictionary to store task details
+    task_dict = {}
+    # initialize an index variable to 1, to keep track of task numbers
+    index = 1
+     
+    # open the tasks.txt file
+    task_file = open("tasks.txt")
+     
+    # loop through the lines in the tasks file
+    for line in task_file:
+        # check if the line starts with 'User assigned to task: '
+        if line.startswith("User assigned to task: "):
+            # check if the task_dict is empty:
+            if task_dict:
+                task_indexes[index] = task_dict
+                index += 1
+                task_dict = {}
+                 
+        # add the current line as a task value
+        colon = line.find(":")
+        if colon != -1:
+            task_key = line[:colon].strip()
+            task_value = line[colon + 1 :].strip()
+            task_dict[task_key] = task_value
+     
+    task_indexes[index] = task_dict
+    task_file.close()
+    return task_indexes
+load_tasks()
+
+USER REPORT:
+
+- Follow the same steps/logic as described in generate report above.

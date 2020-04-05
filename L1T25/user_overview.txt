@@ -1,0 +1,39 @@
+The total number of users registered: 6
+The total number of tasks tracked: 4
+
+The total number of tasks assigned to admin: 2
+The percentage of tasks assigned to admin: 2%
+The percentage of tasks assigned to admin that has been completed: 0%
+The percentage of tasks assigned to admin that must still be completed: 100%
+The percentage of tasks assigned to admin are overdue: 100%
+
+The total number of tasks assigned to vince: 2
+The percentage of tasks assigned to vince: 2%
+The percentage of tasks assigned to vince that has been completed: 0%
+The percentage of tasks assigned to vince that must still be completed: 100%
+The percentage of tasks assigned to vince are overdue: 100%
+
+The total number of tasks assigned to tien: 0
+The percentage of tasks assigned to tien: 0%
+The percentage of tasks assigned to tien that has been completed: 0%
+The percentage of tasks assigned to tien that must still be completed: 100%
+The percentage of tasks assigned to tien are overdue: 0%
+
+The total number of tasks assigned to mentor: 0
+The percentage of tasks assigned to mentor: 0%
+The percentage of tasks assigned to mentor that has been completed: 0%
+The percentage of tasks assigned to mentor that must still be completed: 100%
+The percentage of tasks assigned to mentor are overdue: 0%
+
+The total number of tasks assigned to hyperion: 0
+The percentage of tasks assigned to hyperion: 0%
+The percentage of tasks assigned to hyperion that has been completed: 0%
+The percentage of tasks assigned to hyperion that must still be completed: 100%
+The percentage of tasks assigned to hyperion are overdue: 0%
+
+The total number of tasks assigned to python: 0
+The percentage of tasks assigned to python: 0%
+The percentage of tasks assigned to python that has been completed: 0%
+The percentage of tasks assigned to python that must still be completed: 100%
+The percentage of tasks assigned to python are overdue: 0%
+

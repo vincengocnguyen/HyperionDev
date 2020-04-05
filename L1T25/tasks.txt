@@ -1,0 +1,4 @@
+admin,Register Users with taskManager.py,Use taskManager.py to add the usernames and passwords for all team members that will be using this program.,2019-10-19,2019-10-20,No
+admin,Assign initial tasks,Use taskManager.py to assign each team member with appropriate tasks,2019-10-10,2019-10-25,No
+vince,Capstone Project II,Comprehensive exercise integrating what we've learnt so far,2020-03-10,2020-03-15,No
+vince,Capstone Project IV,Very difficult exercise integrating what we've learnt so far,2020-03-16,2020-03-20,No

@@ -1,0 +1,6 @@
+The total number of tasks tracked: 4
+The total number of completed task: 0
+The total number of uncompleted task: 4
+The total number of overdue task: 4
+The percentage of uncompleted tasks: 100%
+The percentage of overdue tasks: 100%
