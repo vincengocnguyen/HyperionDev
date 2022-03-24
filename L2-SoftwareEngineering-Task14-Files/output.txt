@@ -1,0 +1,6 @@
+The Min of [1, 2, 3, 5, 6] is 1
+The Max of [1, 2, 3, 5, 6] is 6
+The Avg of [1, 2, 3, 5, 6] is 3.4
+90 9The P90 of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] is 10
+The Sum of [1, 2, 3, 5, 6] is 17
+70 2The P70 of [1, 2, 3] is 3
